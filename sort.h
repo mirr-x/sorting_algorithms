@@ -19,11 +19,18 @@ typedef struct listint_s
 #include <stdio.h>
 #include <stdlib.h>
 
-/* func */
+/* func ----------------------------------------------------------------*/
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
+
+/* 0x00 */
 void bubble_sort(int *array, size_t size);
+
+/* 0x01 */
 void swap_nodes(listint_t **head, listint_t **node1, listint_t *node2);
 void insertion_sort_list(listint_t **list);
+
+/* 0x02 */
+void selection_sort(int *array, size_t size);
 
 #endif
